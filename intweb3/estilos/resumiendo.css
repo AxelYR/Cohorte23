@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    background-color: lightpink;
+    color: mediumspringgreen;
+}
+
+h2 {
+    text-align: center;
+    color: steelblue;
+}
+
+main{
+    font-size: 30px;
+}
+
+#dato{
+    font-size: 15;
+    color: brown;
+}
+
+header{
+    color: aqua;
+}
