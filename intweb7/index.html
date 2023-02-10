@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos js para la web (intweb7)</title>
+    <script>
+        function salute(){
+            console.log("Hola mundo Js desde vcs");
+        }
+        function sumate(v1, v2=5357){
+            return(v1+v2);
+        }
+    </script>
+    <script>
+        function llamanombre (nombre){
+            alert("Hola, "+ nombre);
+        }
+    </script>
+        <script>
+            function llamahoras (horas_trabajadas, coste_hora){
+                alert("El sueldo total es "+ (sueldo_total));
+            }
+        </script>
+
+        <script>
+            function operacion (v1, v2, v3, v4){
+                alert("el resultado de 2+3/2*5 es "+ (resultado));
+            }
+        </script>
+
+</head>
+<body>
+    <h1>JavaScript</h1>
+    
+    <script>
+        salute(); 
+        console.log(sumate(3));
+        
+        let nombre = prompt("cual es tu nombre " );
+        llamanombre(nombre);
+    </script>
+
+    <script>
+        let horas_trabajadas=prompt("Cuantas horas trabajo");
+        let coste_hora=prompt("Cuanto cobra por hora?");
+        let sueldo_total=(horas_trabajadas*coste_hora);
+        llamahoras();       
+    </script>
+
+    <script>
+        let v1=2
+        let v2=3
+        let v3=2
+        let v4=5
+        let resultado=((v1+v2)/(v3*v4));
+        operacion();
+    </script>
+
+    <script src="./js/tiposdedatosyvariables.js"></script>
+</body>
+</html>
