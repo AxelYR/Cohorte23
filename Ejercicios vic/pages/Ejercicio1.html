@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="../Css/Ejercicio1.css">
+</head>
+<body class="contenedor">
+    <div>
+        <h1 id="saludo">Hello Name </h1>
+    </div>
+    <div>
+    <button id="cambiar_boton">Change the name</button>
+    </div>
+
+    <script>
+    function changeName() {
+        var name = prompt("What is your name?");
+        document.querySelector("#saludo").textContent = "Hello " + name;
+        }
+    
+    document.querySelector("#cambiar_boton").addEventListener("click", changeName);
+
+    </script>
+</body>
+</html>
