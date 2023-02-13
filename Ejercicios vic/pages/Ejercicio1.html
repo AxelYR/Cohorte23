@@ -7,7 +7,7 @@
     <title>Ejercicio 1</title>
     <link rel="stylesheet" href="../Css/Ejercicio1.css">
 </head>
-<body class="contenedor">
+<body>
     <div>
         <h1 id="saludo">Hello Name </h1>
     </div>
@@ -16,12 +16,16 @@
     </div>
 
     <script>
+    //La funcion es declarada para poder ser llamada más adelante cuando se desencadene el evento "click"
     function changeName() {
         var name = prompt("What is your name?");
+       //lo que se esta haciendo aqui es modificar el contenido de la etiqueta que contenda el id #saludo, reemplazando el texto despues de haber tomado el nuevo valor de la etiqueta name, da la ilusión de cambiar solo el nombre, pero la totalidad del texto es reemplazado despues de esta instruccion 
         document.querySelector("#saludo").textContent = "Hello " + name;
         }
-    
+    // document.querySelector es un método en JavaScript que permite seleccionar un elemento HTML específico en una página. Devuelve el primer elemento que coincida con el selector CSS especificado como argumento.
+     // Para registrar un controlador de eventos, se utiliza el método addEventListener en un elemento HTML. Este método toma dos argumentos: el tipo de evento y la función que se ejecutará cuando se produzca el evento. Por ejemplo:
     document.querySelector("#cambiar_boton").addEventListener("click", changeName);
+    //
 
     </script>
 </body>
