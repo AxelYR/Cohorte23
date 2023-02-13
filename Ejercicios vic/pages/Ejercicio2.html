@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae :: Victor y Hugo</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Curriculum Vitae :: Axel Reynaga</title>
+    <link rel="stylesheet" href="../Css/styles.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <header class="row">
             <div id="photo-header">
                 <div id="photo">
-                    <img src="../Img/REDESSOCIALESGODÍN-01.webp" alt="Victor y Hugo">
+                    <img src="../img/REDESSOCIALESGODÍN-01.webp" alt="Victor y Hugo">
                 </div>
             </div>
             <h1>Hola mi nombre es <span>Axel Reynaga </span> y este es mi resumen</h1>
@@ -154,6 +154,7 @@
                         <li><strong>Skype:</strong>Axel_REHA</li>
                         <li><strong>Twiter:</strong>@AX_R23</li>
                         <li><strong>Facebook:</strong>/Axel Reynaga</li>
+                        <button id="datito">datito</button>
                     </ul>
 
                     <!--**********************skills*****************************-->
@@ -172,6 +173,7 @@
                     <h2>Idiomas</h2>
                     <div>
                         <div>Ingles
+                            <button id="datazo">Datazo</button>
                             <div class="icon-start">
                                 <div class="icon-start-red" style="width: 40%;">
 
@@ -205,7 +207,17 @@
                 </div>
             </div>
 
+        <script>
+            function soltar_dato(){
+                alert("El ingles lo aprendi en duolingo")
+            }
+            function soltar_datito(){
+                alert("Mi cuenta de facebook la cree para jugar angrybirds")
+            }
 
+            document.querySelector("#datito").addEventListener("click", soltar_datito);
+            document.querySelector("#datazo").addEventListener("click", soltar_dato);
+        </script>
 
 
         </section>

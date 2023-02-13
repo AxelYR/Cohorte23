@@ -258,7 +258,7 @@ h2 {
 /*--------------------------------*/
 
 .icon-start{
-    background: url(../Img/star-grey.png)no-repeat;
+    background: url(../img/star-grey.png)no-repeat;
     width: 110px;
     height: 14px;
     float: right;
@@ -266,7 +266,7 @@ h2 {
 }
 
 .icon-start-red{
-    background: url(../Img/star-red.png)no-repeat;
+    background: url(../img/star-red.png)no-repeat;
     width: 110px;
     height: 14px;
     float: left;
