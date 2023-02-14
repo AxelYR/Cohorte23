@@ -1,5 +1,25 @@
 let lista=[12,5,80,34];
 //console.log(lista.length)
+let lnueva=lista.map(
+    function(valor){
+        return valor*2;
+    }
+);
+console.log(lnueva);
+
+
+
+lista.sort(
+    function(valor1, valor2){
+        return valor2-valor1;
+    }
+)
+console.log(lista);
+
+
+
+
+
 
 let msj = lista.join("-");
 console.log(msj);
