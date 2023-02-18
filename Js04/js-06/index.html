@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora DOm</title>
+</head>
+<body>
+    <!--Renderizar es escanear el documento=== Critical rendering path-->
+
+    <h1 id="h1" class="botones">Calculadora Dom</h1>
+
+
+    <!--Ingreso de numeros-->
+    <input type="number" id="input1" placeholder="Ingresa tu primer número">
+
+    <input type="number" id="input2" placeholder="Ingresa tu segundo número">
+
+    <!--Botones de operación-->
+    <br>
+    
+    <button onmouseover="cambiaColor('blue')" id="boton_suma" class=" botones">Suma</button>
+    <br>
+    <button id="boton_resta">Resta</button>
+    <br>
+    <button id="boton_multiplicacion">Multiplicación</button>
+    <br>
+    <button id="boton_division">División</button>
+
+    <!--Resultado-->
+
+    <p id="resultado">resultado</p>
+
+
+    
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
