@@ -24,8 +24,8 @@ class OperacionesAritmeticas{
     }
 }
 
-let obj4= new OperacionesAritmeticas(4,88);
-console.log("----->"+obj4.multi());
+let obj4= new OperacionesAritmeticas(88,4);
+console.log("----->"+obj4.sumar());
 
 
 
