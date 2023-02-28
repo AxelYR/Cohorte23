@@ -10,8 +10,8 @@ public class EjecutarNH {
 		// TODO Auto-generated method stub
 		Scanner sn = new Scanner(System.in);
 
-		NuevoHola nh = new NuevoHola("Axel");
-		nh.saludo();
+		//NuevoHola nh = new NuevoHola("");
+		//nh.saludo();
 		
 		String nombre;
 		System.out.print("Cual es tu nombre: ");

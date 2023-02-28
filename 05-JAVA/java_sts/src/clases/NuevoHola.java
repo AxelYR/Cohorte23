@@ -16,7 +16,7 @@ public class NuevoHola {
 		
 	}
 	public void saludoConNombre() {
-		System.out.print("Hola tu eres "+this.nombre);
+		System.out.print(this.nombre+" tu eres hola");
 	}
 	
 }
