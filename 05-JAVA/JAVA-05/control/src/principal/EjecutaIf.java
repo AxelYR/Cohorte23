@@ -10,13 +10,13 @@ public class EjecutaIf {
 		
 		//ei.anidado();
 	//}
-	//public static void main(String[] args) {
-		//EstructuraMultiple em = new EstructuraMultiple();
-		
-		//em.elbistek();
 	public static void main(String[] args) {
-		Orden3 O3 = new Orden3();
+		EstructuraMultiple em = new EstructuraMultiple();
 		
-		O3.problema();
+		em.elbistek();
+	//public static void main(String[] args) {
+		//Orden3 O3 = new Orden3();
+		
+		//O3.problema();
 	}
 }

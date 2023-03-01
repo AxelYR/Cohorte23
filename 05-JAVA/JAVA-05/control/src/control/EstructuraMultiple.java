@@ -58,7 +58,7 @@ public class EstructuraMultiple {
 		System.out.println("Introduzca un segundo nombre ");
 		String entradaV2 = dato.nextLine();
 		
-		String x = (entradaV==entradaV2) ? "Son el mismo nombre": "no son el mismo nombre";
+		String x = (entradaV.equals(entradaV2)) ? "Son el mismo nombre": "no son el mismo nombre";
 		
 		System.out.println(x);
 
