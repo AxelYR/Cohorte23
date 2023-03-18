@@ -1,0 +1,62 @@
+import java.io.*;
+import java.math.*;
+import java.text.*;
+import java.util.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static void plusMinus(int[] arreglo) {
+        
+        int positivo = 0;
+        int negativo = 0;
+        int esCero = 0;
+        int n = arreglo.length;
+
+        for (int i = 0; i < n; i++) {
+            
+            if (arreglo[i] > 0) {
+                positivo++;
+            } else if (arreglo[i] < 0) {
+                negativo++;
+            } else {
+                esCero++;
+            }
+            
+        }
+
+        double rPositivo = (double) positivo / n;
+        double rNegativo = (double) negativo / n;
+        double rCero = (double) esCero / n;
+
+        System.out.printf("%.6f\n", rPositivo);
+        System.out.printf("%.6f\n", rNegativo);
+        System.out.printf("%.6f\n", rCero);
+        
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        
+        int n = scanner.nextInt();
+        
+        scanner.skip("(\r\n|[\n\r])?");
+
+        int[] arreglo = new int[n];
+        String[] arrItems = scanner.nextLine().split(" ");
+        
+        scanner.skip("(\r\n|[\n\r])?");
+
+        for (int i = 0; i < n; i++) {
+            
+            int elemento = Integer.parseInt(arrItems[i]);
+            arreglo[i] = elemento;
+            
+        }
+
+        plusMinus(arreglo);
+
+        scanner.close();
+    }
+}
